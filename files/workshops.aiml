@@ -55,7 +55,7 @@
 
     <category>
         <pattern>WHAT IS MY NAME</pattern>
-        <template><srai>WHAT'S MY NAME</srai></template>
+        <template>Your name is <get name="name"/>, right?</template>
     </category>
 
     <!-- Optional extra memory: age -->
