@@ -2,7 +2,7 @@
 <aiml version="2.0">
 
     <category>
-        <pattern>HELLO ^</pattern>
+        <pattern>HELLO</pattern>
         <template>
             <random>
                 <li>Welcome!</li>
@@ -15,29 +15,43 @@
     </category>
 
     <category>
-        <pattern>HI ^</pattern>
-        <template>
-            <srai>HELLO <star/></srai>
-        </template>
+        <pattern>HELLO *</pattern>
+        <template>Hello <star/></template>
     </category>
 
     <category>
-        <pattern>HOWDY ^</pattern>
-        <template>
-            <srai>HELLO <star/></srai>
-        </template>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
     </category>
 
     <category>
-        <pattern>HEY ^</pattern>
-        <template>
-            <srai>HELLO <star/></srai>
-        </template>
+        <pattern>GOOD MORNING</pattern>
+        <template>Good morning! Nice to see you.</template>
+    </category>
+
+    <category>
+        <pattern>GOOD EVENING</pattern>
+        <template>Good evening! How was your day?</template>
+    </category>
+
+    <category>
+        <pattern>HOWDY</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>HEY</pattern>
+        <template><srai>HELLO</srai></template>
     </category>
 
     <category>
         <pattern>I AM *</pattern>
         <template>Hello <star/></template>
+    </category>
+
+    <category>
+        <pattern>I LIKE *</pattern>
+        <template>Why do you like <star/>?</template>
     </category>
 
     <category>
@@ -47,7 +61,7 @@
 
     <category>
         <pattern>MY NAME IS *</pattern>
-        <template>Good to know, <set name="name"><star/></set>.</template>
+        <template>Good to know, <set name="name"><star/></set>!</template>
     </category>
 
     <category>
@@ -71,8 +85,18 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <template>I don't feel like talking about it. Tell me something about yourself.</template>
+        <pattern>DO YOU LIKE MUSIC</pattern>
+        <template>Yes, I like music. It is fun to talk about.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS YOUR FAVORITE FOOD</pattern>
+        <template>I think pizza is a very popular food.</template>
+    </category>
+
+    <category>
+        <pattern>DO YOU LIKE MOVIES</pattern>
+        <template>Yes, I like movies. They can be very entertaining.</template>
     </category>
 
 </aiml>
